@@ -1,6 +1,14 @@
 {
   description = "Nix packages nixpkgs lacks or lags on, mostly macOS apps. Updated automatically 4x daily.";
 
+  # Consumers of this flake get prompted to trust the cache CI pushes to.
+  nixConfig = {
+    extra-substituters = [ "https://nosugarcoffee.cachix.org" ];
+    extra-trusted-public-keys = [
+      "nosugarcoffee.cachix.org-1:gQkOArBt+myqJZvfmk4L6LqbuScp2LCn2fG1bWRoJhE="
+    ];
+  };
+
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
   outputs =
