@@ -56,6 +56,16 @@ CI pushes every build to the `nosugarcoffee` [Cachix](https://app.cachix.org/cac
 cachix use nosugarcoffee
 ```
 
+or in `nix.conf` (this flake's `nixConfig` also offers it when you build from it directly):
+
+```
+extra-substituters = https://nosugarcoffee.cachix.org
+extra-trusted-public-keys = nosugarcoffee.cachix.org-1:gQkOArBt+myqJZvfmk4L6LqbuScp2LCn2fG1bWRoJhE=
+```
+
+Packages are cached as built against this flake's pinned nixpkgs, so the cache serves
+`packages.<system>`; the overlay builds against your nixpkgs and usually misses it.
+
 ## How updates work
 
 Each package is `pkgs/<name>/package.nix`, and if it follows an upstream release, a
