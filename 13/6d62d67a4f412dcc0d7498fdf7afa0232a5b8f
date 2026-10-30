@@ -1,0 +1,27 @@
+pkgs/_1password-cli/pin.json
+  s_38bdb33047b421::t_8f237c6c31dd1d 1-6,8-15,20-21
+pkgs/_1password-gui/package.nix
+  s_38bdb33047b421::t_370122d537b530 1-47
+tests/test_release_pins.py
+  s_38bdb33047b421::t_ca1ec359ca427e 208-250
+pkgs/_1password-cli/package.nix
+  s_38bdb33047b421::t_416a14c7474514 1-57
+pkgs/_1password-gui/pin.json
+  s_38bdb33047b421::t_6cced1130a8a22 1-6,8-13,16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.51-trip",
+  "base_commit_sha": "136d62d67a4f412dcc0d7498fdf7afa0232a5b8f",
+  "prompts": {},
+  "sessions": {
+    "s_38bdb33047b421": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a94888e2-db17-4f31-a432-4fd81f100973",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "NoSugarCoffee <25247325+NoSugarCoffee@users.noreply.github.com>"
+    }
+  }
+}
