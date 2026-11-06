@@ -26,7 +26,7 @@ Modeled on [numtide/llm-agents.nix](https://github.com/numtide/llm-agents.nix).
 | [`qingjian`](https://qingjian.app) | aarch64-darwin | Pinyin input method that shows a word in the language you are learning beside each candidate (installs under `Library/Input Methods`) |
 | [`scroll-reverser`](https://pilotmoon.com/scrollreverser/) | aarch64-darwin | Reverse the scroll direction, signed official release; newer than nixpkgs' |
 
-Several are unfree (`_1password-cli`, `_1password-gui`, `ego-lite`, `jetbrains-air`); allow unfree packages to use them.
+Several are unfree (`_1password-cli`, `_1password-gui`, `ego-lite`, `heyclicky`, `jetbrains-air`); allow unfree packages to use them.
 
 ## Usage
 
